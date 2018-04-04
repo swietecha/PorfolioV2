@@ -1,0 +1,183 @@
+/* Colors Stylesheet */
+
+/*======================================================================================================================
+    ICE BLUE COLOR PALETTE
+======================================================================================================================*/
+/*  ICE BLUE BACKGROUND COLOR ----------------------------------------------------------------------------------------*/
+.sw-blue-ice, .sw-hover-blue-ice:hover{color:#fffafa!important;background-color:#3b77ac!important}
+.sw-blue-silver, .sw-hover-blue-silver:hover{color:#fffafa!important;background-color:#839ca5!important}
+.sw-ice-blue, .sw-hover-ice-blue:hover{color:#3b77ac!important;background-color:#74bbfb!important}
+.sw-aqua, .sw-hover-aqua:hover{color:#3b77ac!important;background-color:#73fbf7!important}
+.sw-ice-silver, .sw-hover-ice-silver:hover{color:#3b77ac!important;background-color:#c5d4e1!important}
+.sw-snow, .sw-hover-snow:hover{color:#3b77ac!important;background-color:#fffafa!important}
+/*  ICE BLUE TEXT COLOR ----------------------------------------------------------------------------------------------*/
+.sw-text-blue-ice, .sw-hover-text-blue-ice:hover{color:#3b77ac!important}
+.sw-text-blue-silver, .sw-hover-text-blue-silver:hover{color:#839ca5!important}
+.sw-text-ice-blue, .sw-hover-text-ice-blue:hover{color:#74bbfb!important}
+.sw-text-aqua, .sw-hover-text-aqua:hover{color:#73fbf7!important}
+.sw-text-ice-silver, .sw-hover-text-ice-silver:hover{color:#c5d4e1!important}
+.sw-text-snow, .sw-hover-text-snow:hover{color:#fffafa!important}
+/*  ICE BLUE BORDER COLOR --------------------------------------------------------------------------------------------*/
+.sw-border-blue-ice, .sw-hover-border-blue-ice:hover{border-color:#3b77ac!important}
+.sw-border-blue-silver, .sw-hover-border-blue-silver:hover{border-color:#839ca5!important}
+.sw-border-ice-blue, .sw-hover-border-ice-blue:hover{border-color:#74bbfb!important}
+.sw-border-aqua, .sw-hover-aqua:hover{border-color:#73fbf7!important}
+.sw-border-ice-silver, .sw-hover-border-ice-silver:hover{border-color:#c5d4e1!important}
+.sw-border-snow, .sw-hover-border-snow:hover{border-color:#fffafa!important}
+
+
+/*======================================================================================================================
+    TONIQUE COLOR PALETTE
+======================================================================================================================*/
+/*  TONIQUE BACKGROUND COLOR -----------------------------------------------------------------------------------------*/
+.sw-brown, .sw-hover-brown:hover{color:#e9cfa7!important;background-color:#3a2b1e!important}
+.sw-tan, .sw-hover-tan:hover{color:#3a2b1e!important;background-color:#e9cfa7!important}
+.sw-grey, .sw-hover-grey:hover{color:#17325a!important;background-color:#ecebe9!important}
+.sw-light-blue, .sw-hover-light-blue:hover{color:#17325a!important;background-color:#a4c3d5!important}
+.sw-navy, .sw-hover-navy:hover{color: #a4c3d5!important;background-color:#17325a!important}
+/*  TONIQUE TEXT COLOR -----------------------------------------------------------------------------------------------*/
+.sw-text-brown, .sw-hover-text-brown:hover{color:#3a2b1e!important}
+.sw-text-tan, .sw-hover-text-tan:hover{color:#e9cfa7!important}
+.sw-text-grey, .sw-hover-text-grey:hover{color:#ebece9!important}
+.sw-text-light-blue, .sw-hover-text-light-blue:hover{color:#a4c3d5!important}
+.sw-text-navy, .sw-hover-text-navy:hover{color:#17325a!important}
+/*  TONIQUE BORDER COLOR ---------------------------------------------------------------------------------------------*/
+.sw-border-brown, .sw-hover-border-brown:hover{border-color:#3a2b1e!important}
+.sw-border-tan, .sw-hover-border-tan:hover{border-color:#e9cfa7!important}
+.sw-border-grey, .sw-hover-border-grey:hover{border-color:#ecebe9!important}
+.sw-border-light-blue, .sw-hover-border-light-blue:hover{border-color:#a4c3d5!important}
+.sw-border-navy, .sw-hover-border-navy:hover{border-color:#17325a!important}
+
+
+/*======================================================================================================================
+    LOGO COLOR PALETTE
+======================================================================================================================*/
+/*  LOGO BACKGROUND COLOR --------------------------------------------------------------------------------------------*/
+.sw-black, .sw-hover-black:hover{color:#bcc6cc!important;background-color:#111111 !important}
+.sw-dark-blue, .sw-hover-dark-blue:hover{color:#bcc6cc!important;background-color:#1f3fa4!important}
+.sw-metallic-silver, .sw-hover-metallic-silver:hover{color:#1f3fa4!important;background-color:#bcc6cc!important}
+.sw-white, .sw-hover-white:hover{color:#1f3fa4!important;background-color:#ffffff!important}
+/*  LOGO TEXT COLOR --------------------------------------------------------------------------------------------------*/
+.sw-text-black, .sw-hover-text-black:hover{color:#111111!important}
+.sw-text-dark-blue, .sw-hover-text-dark-blue:hover{color:#1f3fa4!important}
+.sw-text-metallic-silver, .sw-hover-text-metallic-silver:hover{color:#bcc6cc!important}
+.sw-text-white, .sw-hover-text-white:hover{color:#fff!important}
+/*  LOGO BORDER COLOR ------------------------------------------------------------------------------------------------*/
+.sw-border-black, .sw-hover-border-black:hover{border-color:#111111!important}
+.sw-border-dark-blue, .sw-hover-border-dark-blue:hover{border-color:#1f3fa4!important}
+.sw-border-metallic-silver, .sw-hover-border-metallic-silver:hover{border-color:#bcc6cc!important}
+.sw-border-white, .sw-hover-border-white:hover{border-color:#fff!important}
+
+
+/*======================================================================================================================
+    PR LINK STATES COLOR PALETTE
+======================================================================================================================*/
+.r a,
+.b a,
+.bl a,
+.y a,
+.p a,
+.s a,
+.g a,
+.w a,
+.lbl a,
+.c a,
+.n a,
+.go a,
+.o a,
+.v a,
+.t a,
+.a a,
+.aq a,
+.mr a,
+.nr a,
+.afr a,
+.ar a,
+.cgr a {
+    padding: 4px;
+    text-decoration: none;
+    display: block;
+    color: #909090;
+    background-color: #000;
+    border: 2px solid #c0c0c0;
+    border-right-color: #909090;
+    border-bottom-color: #909090;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+
+.a a:hover,
+.c a:hover,
+.r a:hover,
+.o a:hover,
+.go a:hover,
+.y a:hover,
+.g a:hover,
+.aq a:hover,
+.lbl a:hover,
+.bl a:hover,
+.n a:hover,
+.p a:hover,
+.v a:hover,
+.b a:hover,
+.t a:hover,
+.s a:hover,
+.w a:hover,
+.mr a:hover,
+.nr a:hover,
+.afr a:hover,
+.ar a:hover,
+.cgr a:hover {
+    border: 2px solid #909090;
+    border-right-color: #c0c0c0;
+    border-bottom-color: #c0c0c0;
+}
+
+.a a:hover,
+.c a:hover,
+.r a:hover,
+.o a:hover,
+.g a:hover,
+.lbl a:hover,
+.bl a:hover,
+.n a:hover,
+.p a:hover,
+.v a:hover,
+.b a:hover,
+.t a:hover,
+.mr a:hover,
+.nr a:hover,
+.afr a:hover,
+.ar a:hover,
+.cgr a:hover {color: #ffffff;}
+
+.go a:hover,
+.y a:hover,
+.aq a:hover,
+.s a:hover,
+.w a:hover {color: #000000;}
+
+.a a:hover, .current a:hover {background-color: #933;}
+.c a:hover {background-color: #dc143c;}
+.r a:hover {background-color: #f00;}
+.o a:hover {background-color: #ffa500;}
+.go a:hover {background-color: #ffd700;}
+.y a:hover {background-color: #ff0;}
+.g a:hover {background-color: #080;}
+.aq a:hover {background-color: #00ffff;}
+.lbl a:hover {background-color: #00bfff;}
+.bl a:hover {background-color: #00f;}
+.n a:hover {background-color: #00a;}
+.p a:hover {background-color: #f0f;}
+.v a:hover {background-color: #808;}
+.b a:hover {background-color: #5d5d5d;}
+.t a:hover {background-color: #999;}
+.s a:hover {background-color: #ccc;}
+.w a:hover {background-color: #fff;}
+
+.mr a:hover {background-color: #ff2400; color: #ffd700;}
+.nr a:hover {background-color: #0000ff; color: #ffd700;}
+.afr a:hover {background-color: #120a8f; color: #ffef00;}
+.ar a:hover {background-color: #000; color: #ffd700;}
+.cgr a:hover {background-color: #fff; color: #ffa500;}

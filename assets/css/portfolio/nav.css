@@ -1,0 +1,43 @@
+/*======================================================================================================================
+    Bar Classes - Navigation
+======================================================================================================================*/
+.sw-bar{width:100%;overflow:hidden}
+.sw-bar .sw-bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+}
+.sw-bar-block .sw-bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;outline:0;
+}
+.sw-sidebar{
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto;
+}
+.sw-main,#main{transition:margin-left .4s}
+.sw-bar-block .sw-dropdown-hover,
+.sw-bar-block .sw-dropdown-click{width:100%}
+.sw-bar-block .sw-dropdown-hover .sw-dropdown-content,
+.sw-bar-block .sw-dropdown-click .sw-dropdown-content{min-width:100%}
+.sw-bar-block .sw-dropdown-hover .sw-button,
+.sw-bar-block .sw-dropdown-click .sw-button{width:100%;text-align:left;padding:8px 16px}
+.sw-center .sw-bar{display:inline-block;width:auto}
+.sw-bar .sw-dropdown-hover,
+.sw-bar .sw-dropdown-click{position:static;float:left}
+.sw-bar .sw-button{white-space:normal}
+.sw-bar-block.sw-center .sw-bar-item{text-align:center}
+.sw-block{display:block;width:100%}
+.sw-bar-item {transition: all 0.35s ease-in-out}

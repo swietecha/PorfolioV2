@@ -1,0 +1,520 @@
+/* sw.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}svg:not(:root){overflow:hidden}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+
+html,body{
+    font-family:Asap,sans-serif;
+    font-size:16px;
+    height: 100%;
+    line-height: 1.8;
+}
+html{overflow-x:hidden}
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+h1,h2,h3,h4,h5,h6{
+    font-family:Alegreya Sans SC,sans-serif;
+    font-weight:400;
+    margin:10px 0;
+}
+hr{border:0;border-top:1px solid #bcc6cc;margin:20px 0}
+img{vertical-align:middle}
+a{color:inherit}
+.sw-container:after,
+.sw-container:before,
+.sw-panel:after,
+.sw-panel:before,
+.sw-row:after,
+.sw-row:before,
+.sw-row-padding:after,
+.sw-row-padding:before,
+.sw-cell-row:before,
+.sw-cell-row:after,
+.sw-clear:after,
+.sw-clear:before,
+.sw-bar:before,
+.sw-bar:after{content:"";display:table;clear:both}
+
+/*======================================================================================================================
+    Container Classes
+======================================================================================================================*/
+.sw-container,.sw-panel{padding:0.01em 16px}
+.sw-panel{margin-top:16px;margin-bottom:16px}
+.sw-code,.sw-codespan{font-family:Consolas,"courier new",sans-serif;font-size:16px}
+.sw-code{
+    width:auto;
+    background-color:#fff;
+    padding:8px 12px;
+    border-left:4px solid #4CAF50;
+    word-wrap:break-word;
+}
+.sw-codespan{
+    color:crimson;
+    background-color:#f1f1f1;
+    padding-left:4px;
+    padding-right:4px;
+    font-size:110%;
+}
+.sw-badge,.sw-tag{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+}
+.sw-badge{border-radius:50%}
+.sw-ul{list-style-type:none;padding:0;margin:0}
+.sw-ul li{padding:8px 16px;border-bottom:1px solid #ddd}
+.sw-ul li:last-child{border-bottom:none}
+
+/*======================================================================================================================
+    Table Classes
+======================================================================================================================*/
+.sw-table,.sw-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+.sw-table-all{border:1px solid #ccc}
+.sw-bordered tr,.sw-table-all tr{border-bottom:1px solid #ddd}
+.sw-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.sw-table-all tr:nth-child(odd){background-color:#fff}
+.sw-table-all tr:nth-child(even){background-color:#f1f1f1}
+.sw-hoverable tbody tr:hover,.sw-ul.sw-hoverable li:hover{background-color:#ccc}
+.sw-centered tr th,.sw-centered tr td{text-align:center}
+.sw-table td,
+.sw-table th,
+.sw-table-all td,
+.sw-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.sw-table th:first-child,
+.sw-table td:first-child,
+.sw-table-all th:first-child,
+.sw-table-all td:first-child{padding-left:16px}
+.sw-btn,.sw-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.sw-responsive{display:block;overflow-x:auto}
+
+/*======================================================================================================================
+    Card Classes
+======================================================================================================================*/
+.sw-card,
+.sw-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.sw-card-4,
+.sw-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+
+/*======================================================================================================================
+    Responsive Classes
+======================================================================================================================*/
+.sw-row-padding,
+.sw-row-padding>.sw-half,
+.sw-row-padding>.sw-third,
+.sw-row-padding>.sw-twothird,
+.sw-row-padding>.sw-threequarter,
+.sw-row-padding>.sw-quarter,
+.sw-row-padding>.sw-col{padding:0 8px}
+.sw-content{max-width:980px;margin:auto}
+.sw-col,.sw-half,
+.sw-third,
+.sw-twothird,
+.sw-threequarter,
+.sw-quarter{float:left;width:100%}
+.sw-col.s1{width:8.33333%}
+.sw-col.s2{width:16.66666%}
+.sw-col.s3{width:24.99999%}
+.sw-col.s4{width:33.33333%}
+.sw-col.s5{width:41.66666%}
+.sw-col.s6{width:49.99999%}
+.sw-col.s7{width:58.33333%}
+.sw-col.s8{width:66.66666%}
+.sw-col.s9{width:74.99999%}
+.sw-col.s10{width:83.33333%}
+.sw-col.s11{width:91.66666%}
+.sw-col.s12{width:99.99999%}
+@media (min-width:601px){
+    .sw-col.m1{width:8.33333%}
+    .sw-col.m2{width:16.66666%}
+    .sw-col.m3,.sw-quarter{width:24.99999%}
+    .sw-col.m4,.sw-third{width:33.33333%}
+    .sw-col.m5{width:41.66666%}
+    .sw-col.m6,.sw-half{width:49.99999%}
+    .sw-col.m7{width:58.33333%}
+    .sw-col.m8,.sw-twothird{width:66.66666%}
+    .sw-col.m9,.sw-threequarter{width:74.99999%}
+    .sw-col.m10{width:83.33333%}
+    .sw-col.m11{width:91.66666%}
+    .sw-col.m12{width:99.99999%}
+}
+@media (min-width:993px){
+    .sw-col.l1{width:8.33333%}
+    .sw-col.l2{width:16.66666%}
+    .sw-col.l3{width:24.99999%}
+    .sw-col.l4{width:33.33333%}
+    .sw-col.l5{width:41.66666%}
+    .sw-col.l6{width:49.99999%}
+    .sw-col.l7{width:58.33333%}
+    .sw-col.l8{width:66.66666%}
+    .sw-col.l9{width:74.99999%}
+    .sw-col.l10{width:83.33333%}
+    .sw-col.l11{width:91.66666%}
+    .sw-col.l12{width:99.99999%}
+}
+.sw-rest{overflow:hidden}
+.sw-image{max-width:100%;height:auto}
+
+/*======================================================================================================================
+    Layout Classes
+======================================================================================================================*/
+.sw-cell-row{display:table;width:100%}
+.sw-cell{display:table-cell}
+.sw-cell-top{vertical-align:top}
+.sw-cell-middle{vertical-align:middle}
+.sw-cell-bottom{vertical-align:bottom}
+
+/*======================================================================================================================
+    Dropdown Classes
+======================================================================================================================*/
+.sw-dropdown-content{
+    cursor:auto;
+    color:#000;
+    background-color:#fff;
+    display:none;
+    position:absolute;
+    min-width:160px;
+    margin:0;
+    padding:0;
+    z-index:1;
+}
+
+/*======================================================================================================================
+    Button Classes
+======================================================================================================================*/
+/*.sw-button:first-child{font-family: Alegreya Sans SC, sans-serif}*/
+.sw-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.sw-btn,.sw-button{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.sw-disabled,.sw-btn:disabled,.sw-button:disabled{cursor:not-allowed;opacity:0.3}
+.sw-disabled *,:disabled *{pointer-events:none}
+.sw-btn.sw-disabled:hover,.sw-btn:disabled:hover{box-shadow:none}
+.sw-ripple:active{opacity:0.5}
+.sw-ripple{transition:opacity 0s}
+.sw-button:hover{color:#000;background-color:#ccc}
+.sw-transparent,.sw-hover-none:hover{background-color:transparent!important}
+.sw-hover-none:hover{box-shadow:none!important}
+
+/*======================================================================================================================
+    Input Classes
+======================================================================================================================*/
+.sw-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.sw-check,.sw-radio{width:24px;height:24px;position:relative;top:6px}
+.sw-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.sw-animate-input{transition:width 0.4s ease-in-out}
+.sw-animate-input:focus{width:100%!important}
+
+
+/*======================================================================================================================
+    Input Classes
+======================================================================================================================*/
+.sw-modal{
+    z-index:3;
+    display:none;
+    padding-top:100px;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+}
+.sw-modal-content{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:600px;
+}
+.sw-tooltip,.sw-display-container{position:relative}
+.sw-tooltip .sw-text{display:none}
+.sw-tooltip:hover .sw-text{display:inline-block}
+
+/*======================================================================================================================
+    Animation Classes
+======================================================================================================================*/
+.sw-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.sw-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.sw-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.sw-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.sw-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.sw-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.sw-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.sw-spin{animation:sw-spin 2s infinite linear}@keyframes sw-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+
+/*======================================================================================================================
+   Font and Text Classes
+======================================================================================================================*/
+.sw-tiny{font-size:10px!important}
+.sw-small{font-size:12px!important}
+.sw-medium{font-size:15px!important}
+.sw-large{font-size:18px!important}
+.sw-xlarge{font-size:24px!important}
+.sw-xxlarge{font-size:36px!important}
+.sw-xxxlarge{font-size:48px!important}
+.sw-jumbo{font-size:64px!important}
+.sw-wide{letter-spacing:4px}
+.sw-serif{font-family:serif}
+
+/*======================================================================================================================
+   Display Classes
+======================================================================================================================*/
+.sw-center{text-align:center!important}
+.sw-left{float:left!important}
+.sw-right{float:right!important}
+.sw-left-align{text-align:left!important}
+.sw-right-align{text-align:right!important}
+.sw-justify{text-align:justify!important}
+.sw-circle{border-radius:50%}
+.sw-hide{display:none!important}
+.sw-show-block,.sw-show{display:block!important}
+.sw-show-inline-block{display:inline-block!important}
+.sw-top,.sw-bottom{position:fixed;width:100%;z-index:1}
+.sw-top{top:0}
+.sw-bottom{bottom:0}
+.sw-display-container:hover .sw-display-hover{display:block}
+.sw-display-container:hover span.sw-display-hover{display:inline-block}
+.sw-display-topleft{position:absolute;left:0;top:0}
+.sw-display-topright{position:absolute;right:0;top:0}
+.sw-display-bottomleft{position:absolute;left:0;bottom:0}
+.sw-display-bottomright{position:absolute;right:0;bottom:0}
+.sw-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.sw-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.sw-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.sw-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.sw-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.sw-display-position{position:absolute}
+.sw-display-hover{display:none}
+
+/*======================================================================================================================
+   Effect Classes
+======================================================================================================================*/
+.sw-opacity,.sw-hover-opacity:hover{opacity:0.60}
+.sw-opacity-off,.sw-hover-opacity-off:hover{opacity:1}
+.sw-opacity-min{opacity:0.75}
+.sw-opacity-max{opacity:0.25}
+.sw-greyscale-min,.sw-grayscale-min{filter:grayscale(50%)}
+.sw-greyscale,.sw-grayscale{filter:grayscale(75%)}
+.sw-greyscale-max,
+.sw-grayscale-max,
+.sw-hover-greyscale:hover,
+.sw-hover-grayscale:hover{filter:grayscale(100%)}
+.sw-sepia{filter:sepia(75%)}
+.sw-sepia-max,.sw-hover-sepia:hover{filter:sepia(100%)}
+.sw-sepia-min{filter:sepia(50%)}
+.sw-overlay{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:2
+}
+
+/*======================================================================================================================
+   Round Classes
+======================================================================================================================*/
+.sw-round-small{border-radius:2px}
+.sw-round,.sw-round-medium{border-radius:4px}
+.sw-round-large{border-radius:8px}
+.sw-round-xlarge{border-radius:16px}
+.sw-round-xxlarge{border-radius:32px}
+
+/*======================================================================================================================
+   Padding Classes
+======================================================================================================================*/
+.sw-padding-small{padding:4px 8px!important}
+.sw-padding{padding:8px 16px!important}
+.sw-padding-large{padding:12px 24px!important}
+.sw-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.sw-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.sw-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.sw-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.sw-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+
+/*======================================================================================================================
+   Margin Classes
+======================================================================================================================*/
+.sw-margin{margin:16px!important}
+.sw-margin-top{margin-top:16px!important}
+.sw-margin-right{margin-right:16px!important}
+.sw-margin-bottom{margin-bottom:16px!important}
+.sw-margin-left{margin-left:16px!important}
+.sw-section,.sw-code{margin-top:16px!important;margin-bottom:16px!important}
+
+/*======================================================================================================================
+   Border Classes
+======================================================================================================================*/
+.sw-border{border:1px solid #ccc!important}
+.sw-border-top{border-top:1px solid #ccc!important}
+.sw-border-right{border-right:1px solid #ccc!important}
+.sw-border-bottom{border-bottom:1px solid #ccc!important}
+.sw-border-left{border-left:1px solid #ccc!important}
+.sw-border-0{border:0!important}
+.sw-topbar{border-top:6px solid #ccc!important}
+.sw-rightbar{border-right:6px solid #ccc!important}
+.sw-bottombar{border-bottom:6px solid #ccc!important}
+.sw-leftbar{border-left:6px solid #ccc!important}
+
+@media (max-width:600px){
+    .sw-modal-content{margin:0 10px;width:auto!important}
+    .sw-modal{padding-top:30px}
+    .sw-dropdown-hover.sw-mobile .sw-dropdown-content,
+    .sw-dropdown-click.sw-mobile .sw-dropdown-content{position:relative}
+    .sw-hide-small{display:none!important}
+    .sw-bar-item.sw-mobile,
+    .sw-dropdown-hover.sw-mobile,
+    .sw-dropdown-click.sw-mobile{text-align:center}
+    .sw-dropdown-hover.sw-mobile,
+    .sw-dropdown-hover.sw-mobile .sw-btn,
+    .sw-dropdown-hover.sw-mobile .sw-button,
+    .sw-dropdown-click.sw-mobile,
+    .sw-dropdown-click.sw-mobile .sw-btn,
+    .sw-dropdown-click.sw-mobile .sw-button{width:100%}
+    .sw-mobile{display:block;width:100%!important}
+}
+@media (max-width:768px){.sw-modal-content{width:500px}.sw-modal{padding-top:50px}}
+@media (min-width:993px){
+    .sw-modal-content{width:1040px}
+    .sw-hide-large{display:none!important}
+    .sw-sidebar.sw-collapse{display:block!important}
+}
+@media (max-width:992px) and (min-width:601px){.sw-hide-medium{display:none!important}}
+@media (max-width:992px){
+    .sw-sidebar.sw-collapse{display:none}
+    .sw-main{margin-left:0!important;margin-right:0!important}
+}
+
+/*======================================================================================================================
+   Personal Classes
+======================================================================================================================*/
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .tyimg {
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+/*.bgimg-2,*/
+/*.bgimg-3 {*/
+    /*opacity: 0.7;*/
+/*}*/
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("../../images/photo-1467810160588-c86c0deb5d16.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../../images/Artboard 1.svg");
+    min-height: 400px;
+}
+
+/* Third image (Resumé) */
+.bgimg-3 {
+    background-image: url("../../images/Icelandic_Roads_28.jpg");
+    min-height: 400px;
+    /*opacity: 0.7;*/
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+    background-image: url("../../images/Restaurant-wallpaper-4.jpg");
+    min-height: 400px;
+}
+
+.tyimg {
+    background-image: url("../../images/Artboard 1.svg");
+    min-height: 100%;
+}
+
+/* -------------------------------------- Styles explicit to Portfolio Section -------------------------------------- */
+/* Add padding BETWEEN each column */
+.sw-row-padding,
+.sw-row-padding > .sw-col {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.sw-col-pf {
+    display: none; /* Hide all elements by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.sw-show {
+    display: block;
+}
+
+/* Style the buttons */
+.sw-btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #111111;
+    color: #bcc6cc;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.sw-btn:hover, .sw-btn.sw-active {
+    background-color: #1f3fa4;
+    color: #ffffff;
+}
+
+.sw-opacity {transition: all 0.35s ease-in-out}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

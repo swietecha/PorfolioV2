@@ -1,0 +1,22 @@
+/*
+
+Steven Wietecha
+_________________________________________
+|                  /|                  /
+|                /  |                /
+|              /    |              /
+|            /      |            /
+|          /        |          /
+|        /          |        /
+|      /            |      /
+|    /              |    /
+|  /                |  /
+|/                  |/
+
+*/
+@import "portfolio/html5reset.css";
+@import "portfolio/col.css";
+@import "portfolio/nav.css";
+@import "portfolio/color.css";
+@import "portfolio/styles.css";
+@import "../fontawesome-all.min.css";
