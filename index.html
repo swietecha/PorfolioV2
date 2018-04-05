@@ -300,7 +300,12 @@
             </header>
             <div class="sw-content sw-container sw-padding-large sw-white">
                 <div class="sw-col m6 sw-padding-large">
-                    <img src="assets/images/modal/the-world-sm.jpg" class="sw-image">
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/the-world-sm.jpg" class="sw-image">
+                    </div>
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/the-world2-sm.jpg" class="sw-image">
+                    </div>
                 </div>
                 <div class="sw-col m6 sw-padding-large">
                     <h4>Design | UI/UX</h4>
@@ -331,7 +336,12 @@
             </header>
             <div class="sw-content sw-container sw-padding-large sw-white">
                 <div class="sw-col m6 sw-padding-large">
-                    <img src="assets/images/modal/tonique-landing-sm.jpg" class="sw-image">
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/mood-board-sm.jpg" class="sw-image">
+                    </div>
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/tonique-landing-sm.jpg" class="sw-image">
+                    </div>
                 </div>
                 <div class="sw-col m6 sw-padding-large">
                     <h4>Design | Branding</h4>
@@ -446,7 +456,12 @@
             </header>
             <div class="sw-content sw-container sw-padding-large sw-white">
                 <div class="sw-col m6 sw-padding-large">
-                    <img src="assets/images/modal/sppb-sm.jpg" class="sw-image">
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/sppb-sm.jpg" class="sw-image">
+                    </div>
+                    <div class="sw-content sw-container sw-padding">
+                        <img src="assets/images/modal/sppb2-sm.jpg" class="sw-image">
+                    </div>
                 </div>
                 <div class="sw-col m6 sw-padding-large">
                     <h4>Design</h4>
@@ -511,7 +526,7 @@
         // Used to toggle the menu on small screens when clicking on the menu button
         function toggleFunction() {
             var x = document.getElementById("navDemo");
-            if (x.className.indexOf("sw-show") == -1) {
+            if (x.className.indexOf("sw-show") === -1) {
                 x.className += " sw-show";
             } else {
                 x.className = x.className.replace(" sw-show", "");
@@ -535,7 +550,7 @@
             arr1 = element.className.split(" ");
             arr2 = name.split(" ");
             for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                if (arr1.indexOf(arr2[i]) === -1) {element.className += " " + arr2[i];}
             }
         }
 
@@ -570,8 +585,8 @@
         frmvalidator.addValidation("message", "req", "Please provide a message");
 
         $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-                || location.hostname == this.hostname) {
+            if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'')
+                || location.hostname === this.hostname) {
 
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
