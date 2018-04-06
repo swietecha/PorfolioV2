@@ -423,7 +423,7 @@ a{color:inherit}
 }
 @media (max-width:768px){.sw-modal-content{width:500px}.sw-modal{padding-top:50px}}
 @media (min-width:993px){
-    .sw-modal-content{width:1040px}
+    .sw-modal-content{width:1280px}
     .sw-hide-large{display:none!important}
     .sw-sidebar.sw-collapse{display:block!important}
 }
