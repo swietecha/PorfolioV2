@@ -8,7 +8,7 @@ $(document).ready(function(){
         })
         $(this).addClass('sw-active');
         var target = this.hash,
-            menu=target;
+            menu = target;
             $target = $(target);
 
         $('html, body').stop().animate({
