@@ -4,9 +4,9 @@ $(document).ready(function(){
         e.preventDefault();
         $(document).off("scroll");
         $('a').each(function () {
-            $(this).removeClass('sw-active');
+            $(this).removeClass('active');
         })
-        $(this).addClass('sw-active');
+        $(this).addClass('active');
         var target = this.hash,
             menu = target;
             $target = $(target);
@@ -26,10 +26,10 @@ function onScroll(event) {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#myNavbar a').removeClass("sw-active");
-            currLink.addClass("sw-active");
+            $('#myNavbar a').removeClass("active");
+            currLink.addClass("active");
         } else {
-            currLink.removeClass('sw-active');
+            currLink.removeClass('active');
         }
     });
 }
