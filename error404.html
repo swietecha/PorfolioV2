@@ -2,56 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta http-equiv="cleartype" content="on">
+    <!-- Responsive and mobile friendly stuff -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <!-- disable iPhone inital scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Error Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/404.css" />
+    <link rel="stylesheet" href="assets/css/sw.css" />
+
+    <!-- Font Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700|Asap:400,700" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
 
-    <!-- Header-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html#portfolio"><span class="reverse-text">Portfolio</span></a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand reverse-right" href="index.html">
-                    <img src="assets/images/reverse_logo.png" />
-                </a>
-            </div>
-
-        </div>
-    </nav>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Intro -->
-        <section id="reverse_intro" class="wrapper style1 fullscreen fade-up">
-            <div class="reverse-inner">
-                <h1>What???</h1>
-                <p>You have broken through to the digital world.</p>
-                <p>Dark Web has taken over and threatens to break through to the real world.</p>
-                <p>Your only hope is to find the Encoder of the Web.</p>
-                <p>It will not be an easy task. The Encoder of the Web is in hiding.</p>
-                <p>Gather the clues, help Encoder to defeat Dark Web and save both our worlds.</p>
-
-                <ul class="actions">
-                    <li><a href="index.html" class="button">Press me</a></li>
-                </ul>
-            </div>
-        </section>
+<!-- Navbar (sit on top) -->
+<div class="sw-top sw-text-metallic-silver">
+    <div class="sw-bar" id="myNavbar">
+        <a class="sw-bar-item sw-button sw-hover-dark-blue sw-hide-medium sw-hide-large sw-right" href="#" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html#top" class="sw-bar-item sw-button sw-hover-dark-blue sw-hover-text-white sw-right reverse-text">Steven Wietecha</a>
+        <a href="index.html#about" class="sw-bar-item sw-button sw-hover-dark-blue sw-hover-text-white sw-hide-small sw-right reverse-text"><i class="fa fa-user"></i> About</a>
+        <a href="index.html#portfolio" class="sw-bar-item sw-button sw-hover-dark-blue sw-hover-text-white sw-hide-small sw-right reverse-text"><i class="fa fa-th"></i> Portfolio</a>
+        <a href="index.html#resume" class="sw-bar-item sw-button sw-hover-dark-blue sw-hover-text-white sw-hide-small sw-right reverse-text"><i class="fa fa-file-pdf"></i> Resum&#233;</a>
+        <a href="index.html#contact" class="sw-bar-item sw-button sw-hover-dark-blue sw-hover-text-white sw-hide-small sw-right reverse-text"><i class="fa fa-envelope"></i> Contact</a>
     </div>
+</div>
+
+<!-- Content -->
+<div class="riimg sw-display-container sw-blue-ice">
+    <div class="sw-display-middle reverse-inner">
+        <h1 class="sw-text-metallic-silver sw-wide">What???</h1>
+        <p>You have broken through to the digital world.</p>
+        <p>Dark Web has taken over and threatens to break through to the real world.</p>
+        <p>Your only hope is to find the Encoder of the Web.</p>
+        <p>It will not be an easy task. The Encoder of the Web is in hiding.</p>
+        <p>Gather the clues, help Encoder to defeat Dark Web and save both our worlds.</p>
+
+        <a class="sw-btn sw-black sw-hover-dark-blue sw-hover-text-white" href="index.html">Press me</a>
+    </div>
+</div>
 
 </body>
 </html>
