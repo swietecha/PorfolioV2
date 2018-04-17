@@ -19,4 +19,5 @@ _________________________________________
 @import "portfolio/nav.css";
 @import "portfolio/color.css";
 @import "portfolio/styles.css";
+@import "404/reverse_styles.css";
 @import "../fontawesome-all.min.css";

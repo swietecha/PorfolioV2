@@ -438,7 +438,7 @@ a{color:inherit}
    Personal Classes
 ======================================================================================================================*/
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .tyimg {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .tyimg, .riimg {
     background: no-repeat fixed center;
     background-size: cover;
 }
@@ -470,6 +470,11 @@ a{color:inherit}
 
 .tyimg {
     background-image: url("../../images/Artboard 1.svg");
+    min-height: 100%;
+}
+
+.riimg {
+    background-image: url("../../images/reverse_artboard.svg");
     min-height: 100%;
 }
 
